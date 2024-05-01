@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <RootNamespace>CADLib_Plugin_UI</RootNamespace>
@@ -19,28 +19,36 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\Kernel\CADLib_Plugin_Kernel.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="CADLibControls">
       <HintPath>C:\Program Files (x86)\CSoft\Model Studio CS\Viewer\bin\x64\CADLibControls.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NApp">
+      <HintPath>C:\Program Files (x86)\CSoft\Model Studio CS\Viewer\bin\x64\NApp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.NWEViewerComponentLib">
+      <HintPath>C:\Program Files (x86)\CSoft\Model Studio CS\Viewer\bin\x64\Interop.NWEViewerComponentLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AppNWEViewerComponent">
+      <HintPath>C:\Program Files (x86)\CSoft\Model Studio CS\Viewer\bin\x64\AppNWEViewerComponent.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="CSProject3D">
       <HintPath>C:\Program Files (x86)\CSoft\Model Studio CS\Viewer\bin\x64\CSProject3D.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="CoSql.Runtime">
-      <HintPath>C:\Program Files (x86)\CSoft\Model Studio CS\Viewer\bin\x64\CoSql.Runtime.dll</HintPath>
+    <Reference Include="CADLibKernel">
+      <HintPath>C:\Program Files (x86)\CSoft\Model Studio CS\Viewer\bin\x64\CADLibKernel.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Crom.Controls">
-      <HintPath>C:\Program Files (x86)\CSoft\Model Studio CS\Viewer\bin\x64\Crom.Controls.dll</HintPath>
+    <Reference Include="NData">
+      <HintPath>C:\Program Files (x86)\CSoft\Model Studio CS\Viewer\bin\x64\NData.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="NApp">
-      <HintPath>C:\Program Files (x86)\CSoft\Model Studio CS\Viewer\bin\x64\NApp.dll</HintPath>
+    <Reference Include="CdeLib">
+      <HintPath>C:\Program Files (x86)\CSoft\Model Studio CS\Viewer\bin\x64\CdeLib.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>

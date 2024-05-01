@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CADLib_Plugin_UI
 {
-    public partial class UI_PluginStart : Form
+    public partial class UI_PluginMenu : Form
     {
-        public UI_PluginStart()
+        public UI_PluginMenu()
         {
             InitializeComponent();
         }
