@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "CADLib_Plugin_Loader": {
+      "commandName": "Project"
+    },
+    "CADLib": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Program Files (x86)\\CSoft\\Model Studio CS\\Viewer\\bin\\x64\\CADLib.exe"
+    }
+  }
+}
