@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <RootNamespace>CADLib_Plugin_UI</RootNamespace>
@@ -17,6 +17,10 @@
     <Version>1.0.0</Version>
     <AssemblyVersion>1.0.0</AssemblyVersion>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Kernel\CADLib_Plugin_Kernel.csproj" />
+  </ItemGroup>
 
   <ItemGroup>
     <Reference Include="CADLibControls">
@@ -51,6 +55,21 @@
       <HintPath>C:\Program Files (x86)\CSoft\Model Studio CS\Viewer\bin\x64\CdeLib.dll</HintPath>
       <Private>False</Private>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

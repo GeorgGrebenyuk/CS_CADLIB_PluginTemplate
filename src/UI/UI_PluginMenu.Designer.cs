@@ -30,6 +30,8 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.newPluginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -47,16 +49,33 @@
             // newPluginToolStripMenuItem
             // 
             this.newPluginToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.helloToolStripMenuItem});
+            this.helloToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.aboutToolStripMenuItem});
             this.newPluginToolStripMenuItem.Name = "newPluginToolStripMenuItem";
             this.newPluginToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
             this.newPluginToolStripMenuItem.Text = "New plugin";
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Image = global::CADLib_Plugin_UI.Properties.Resources.UI_Icon_Function_About;
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
             // helloToolStripMenuItem
             // 
+            this.helloToolStripMenuItem.Image = global::CADLib_Plugin_UI.Properties.Resources.UI_Icon_Function_Hello;
             this.helloToolStripMenuItem.Name = "helloToolStripMenuItem";
             this.helloToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.helloToolStripMenuItem.Text = "Hello!";
+            this.helloToolStripMenuItem.Click += new System.EventHandler(this.helloToolStripMenuItem_Click);
             // 
             // UI_PluginMenu
             // 
@@ -79,5 +98,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem newPluginToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helloToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
     }
 }

@@ -1,7 +1,8 @@
 ﻿using CADLib;
 using CADLib_Plugin_UI;
 
-namespace CADLib_PluginTemplate
+
+namespace CADLib_Plugin_Loader
 {
     public class CADLibPluginEntryPoint
     {
@@ -13,7 +14,7 @@ namespace CADLib_PluginTemplate
         public static ICADLibPlugin RegisterPlugin(PluginsManager manager)
         {
             //check autorization
-            return new UI_PluginStart(manager);
+            return new UI_PluginMenu(manager);
         }
 
     }

@@ -19,6 +19,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\UI\CADLib_Plugin_UI.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="CADLibControls">
       <HintPath>C:\Program Files (x86)\CSoft\Model Studio CS\Viewer\bin\x64\CADLibControls.dll</HintPath>
       <Private>False</Private>
